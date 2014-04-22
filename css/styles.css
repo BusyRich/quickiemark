@@ -1,0 +1,104 @@
+/* needed so everything is sized correctly in reference to the viewport */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* make the text look a little better */
+body {
+  line-height: 1.5em;
+}
+
+/* useful for making sure divs are the correct size, even with borders
+   and/or padding */
+div {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* make code blocks a little more pretty */
+pre {
+  border-left: 2px solid #ccc;
+  padding: 20px;
+}
+
+.good {
+  color: #C2D9C1;
+}
+
+.warning {
+  color: #F2D399;
+}
+
+.bad {
+  color: #F29999;
+}
+
+/* toolbar */
+#toolbar {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  line-height: 50px;
+  border-bottom: 2px solid #ccc;
+  display: none;
+}
+
+#toolbar a {
+  color: #ccc;
+  border: none;
+  background: none;
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+}
+
+#toolbar a:hover {
+  color: #000;
+}
+
+/* workarea */
+#workarea {
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+  position: relative;
+}
+
+#editor {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#markdown, #preview {
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+#preview {
+  border-left: 2px solid #ccc;
+  overflow: auto;
+  padding: 20px;
+}
+
+#ace {
+  height: 100%;
+}
+
+#ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
