@@ -24,16 +24,13 @@ pre {
   padding: 20px;
 }
 
-.good {
-  color: #C2D9C1;
+.half {
+  width: 50%;
+  float: left;
 }
 
-.warning {
-  color: #F2D399;
-}
-
-.bad {
-  color: #F29999;
+.right {
+  text-align: right;
 }
 
 /* toolbar */
@@ -44,10 +41,14 @@ pre {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   font-size: 32px;
   line-height: 50px;
   border-bottom: 2px solid #ccc;
-  display: none;
+}
+
+#toolbar .half {
+  height: 100%;
 }
 
 #toolbar a {
@@ -67,6 +68,7 @@ pre {
 #workarea {
   width: 100%;
   height: 100%;
+  padding-top: 50px;
 }
 
 #container {
@@ -82,15 +84,12 @@ pre {
 
 #markdown, #preview {
   height: 100%;
-  width: 50%;
-  float: left;
   padding: 20px;
 }
 
 #preview {
   border-left: 2px solid #ccc;
   overflow: auto;
-  padding: 20px;
 }
 
 #ace {
